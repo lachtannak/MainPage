@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+  width: 200px;
+  display: flex;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="vertical-menu" position='center'>
+  <a href="index.html" >Home</a>
+    <a href="gamesy.html"class="active">Gamesy</a>
+    <a onclick="myFunction()"">ADD</a>
+</div>
+    
+<div>    
+    <iframe width=100% height="700" src="https://app.powerbi.com/view?r=eyJrIjoiYzlkMzY5ODAtMTM1Yi00YmIxLWFmMTEtMmJlN2QxZjJjMjFmIiwidCI6ImM2M2NlNzI5LWNhMTctNGU1Mi1hYTJkLTk2Yjc5NDg5YTU0MiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+</div>
+<script type="text/javascript">
+function myFunction() 
+{
+	var s ="";
+	while (s!= "add")
+	{
+		s=prompt("please enter your password");
+		if (s=="add")
+			{
+			window.location.href="add.html"; //page to redirect if password entered is correct
+			}
+		else
+			{
+			alert("Incorrect password-Try again");
+			break;
+			}
+	}
+}
+</script>
+</body>
+</html>
